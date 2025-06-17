@@ -1,0 +1,148 @@
+/* Gaya dasar untuk keseluruhan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0; /* Menambah padding vertikal */
+}
+
+/* Kotak kontainer untuk form */
+.register-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+/* Gaya untuk Logo */
+.logo {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 20px auto;
+}
+
+/* Sub-judul di bawah title */
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Grup untuk label dan input */
+.form-group {
+    margin-bottom: 15px; /* Mengurangi margin untuk form yang lebih panjang */
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #FFC107; /* Kuning Emas Politeknik */
+    box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.3);
+}
+
+/* Memberi ruang di kanan input agar teks tidak menabrak ikon */
+.form-group input[type="password"],
+.form-group input[type="text"] {
+    padding-right: 50px; 
+}
+
+/* Wrapper untuk password input dan tombol toggle */
+.password-wrapper {
+    position: relative;
+}
+
+/* Kontainer ikon mata */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    line-height: 0;
+    opacity: 0.2;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Ikon menjadi jelas saat mouse hover atau inputnya aktif */
+.password-wrapper:hover .toggle-password,
+.form-group input:focus + .toggle-password {
+    opacity: 1;
+}
+
+/* Gaya untuk ikon SVG di dalam tombol toggle */
+.toggle-password svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Menghilangkan ikon mata bawaan dari browser */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+input[type="password"]::-webkit-reveal,
+input[type="password"]::-webkit-clear-button {
+    display: none !important;
+}
+
+/* Tombol Buat Akun */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #0D47A1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #1565C0;
+}
+
+/* Link untuk login */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #0D47A1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color: #FFC107;
+}
